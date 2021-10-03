@@ -1,0 +1,1 @@
+Lab 2 part 1 link: https://b7guo.github.io/Lab2/
