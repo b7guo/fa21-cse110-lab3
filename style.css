@@ -1,3 +1,6 @@
+* {
+    font-family: sans-serif;
+  }
 .navbar { /* set nav position and background */
     background: rgb(29, 28, 28);
     height: 80px;
