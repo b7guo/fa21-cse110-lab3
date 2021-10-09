@@ -3,25 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" >
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <title>Project Keanu</title>
   </head>
   <body>
     <header>
-      <div class="intro">
-        <h2>
+      <!--Navbar Section-->
+      <nav class="navbar">
+        <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#intro" class="navbar__links" id="intro-page">INTRO</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#agenda" class="navbar__links" id="agenda-page">AGENDA</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#recording" class="navbar__links" id="recording-page">RECORDING</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#comment" class="navbar__links" id="comment-page">COMMENT</a>
+            </li>
+          </ul>
+       </div>
+      </nav>
+    </header>
+    <!--Intro Section-->
+    <div class="intro" id="intro">
+      <h2>
           Project Keanu item check meeting minutes<br />
           <a href="https://en.wikipedia.org/wiki/Keanu_Reeves">wiki</a>
-        </h2>
+      </h2>
         <p>
           <b>Location:</b> Center Hall 200 <br />
           <strong>Date:</strong> 10/01/2077 <br /><i>Time:</i> 00:00
           <br />
           <em>Attendees:</em> John Wick, Neo, Silver Hand
         </p>
-      </div>
-    </header>
-    <div class="agenda">
+    </div>
+    <!--Agenda Section-->
+    <div class="agenda" id="agenda">
       <h3>Agenda items</h3>
       <ul>
         <li>
@@ -58,7 +84,8 @@
         <li>Whisky</li>
       </ol>
     </div>
-    <div class="recording">
+    <!--Recording Section-->
+    <div class="recording" id="recording">
       <h3>Meeting recordings</h3>
       <details class="audio">
         <summary>Audio record</summary>
@@ -75,14 +102,14 @@
         </video>
       </details>
     </div>
-    <div class="comment">
+    <!--Comment Section-->
+    <div class="comment" id="comment">
       <h3>Comments</h3>
       <form>
         <label for="textbox">comments for the meeting:</label>
         <textarea id="textbox" rows="4" cols="50">
-    Enter your comments and hit submit.
-    </textarea
-        >
+          Enter your comments and hit submit.
+        </textarea>
         <br /><br />
         <input type="submit" value="Submit" />
       </form>
